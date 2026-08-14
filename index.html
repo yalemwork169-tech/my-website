@@ -63,10 +63,21 @@ nav a:hover {
     color: white;
     background: linear-gradient(135deg, #06b6d4, #6366f1);
 }
+@keyframes welcomeAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
 
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .hero h1 {
     font-size: 55px;
     margin-bottom: 20px;
+    animation: welcomeAnimation 1.5s ease-out;
 }
 
 .hero p {
