@@ -192,6 +192,22 @@ footer {
     }
 }
 </style>
+    <style>
+.dark-mode {
+    background: #111827 !important;
+    color: white !important;
+}
+
+.dark-mode section {
+    background: #1f2937 !important;
+    color: white !important;
+}
+
+.dark-mode .card {
+    background: #374151 !important;
+    color: white !important;
+}
+</style>
 </head>
 
 <body>
@@ -204,6 +220,7 @@ footer {
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
 </nav>
+    <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
 
 <section class="hero" id="home">
     <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80"
@@ -272,6 +289,10 @@ function contactMe() {
 }
 
 </script>
-
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+}
+</script>
 </body>
 </html>
