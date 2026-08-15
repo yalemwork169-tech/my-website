@@ -74,6 +74,19 @@ nav a:hover {
         transform: translateY(0);
     }
 }
+    @keyframes buttonPulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
 .hero h1 {
     font-size: 55px;
     margin-bottom: 20px;
@@ -94,6 +107,7 @@ button {
     font-size: 18px;
     cursor: pointer;
     transition: 0.3s;
+    animation: buttonPulse 2s infinite;
 }
 
 button:hover {
